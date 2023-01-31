@@ -17,8 +17,19 @@
   
 
     <div class="button-overlay-container">
-      <button class="btn btn-primary custom-button button-overlay" style="position: absolute; top: 180px; left: 150px; z-index: 2;">Button 1</button>
+      <!--botón 1-->
+<button class="btn btn-primary custom-button button-overlay" id="openBtn">Button 1</button>
+
+<!-- fondo -->
+<div id="square" style="display: none;">
+  <div class="content">
+    <button class="btn btn-primary" id="closeBtn">Close</button>
+  </div>
+</div>
+
+      <!--boton 2-->
       <button class="btn btn-secondary button-overlay" style="position: absolute; top: 135px; left: 350px; z-index: 2;">Button 2</button>
+      <!--boton 3-->
       <button class="btn btn-success button-overlay" style="position: absolute; top: 110px; left: 650px; z-index: 2;">Button 3</button>
     </div>
     <script src="./script.js"></script>
