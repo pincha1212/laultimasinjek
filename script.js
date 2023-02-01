@@ -1,9 +1,22 @@
-document.querySelector(".custom-button").addEventListener("click", function() {
-    document.querySelector("#square").style.display = "block";
-    document.querySelector(".custom-button").style.display = "none";
-    });
-    
-    document.querySelector("#closeBtn").addEventListener("click", function() {
-    document.querySelector("#square").style.display = "none";
-    document.querySelector(".custom-button").style.display = "block";
-    });
+const openBtn = document.querySelector('#openBtn');
+const closeBtn = document.querySelector('#closeBtn');
+const square = document.querySelector('#square');
+const openBtn2 = document.querySelector('#openBtn2');
+const openBtn3 = document.querySelector('#openBtn3');
+const background = document.querySelector('#background');
+
+openBtn.addEventListener('click', function() {
+square.style.display = 'block';
+openBtn.style.display = 'none';
+openBtn2.style.display = 'none';
+openBtn3.style.display = 'none';
+background.classList.add('blur');
+});
+
+closeBtn.addEventListener('click', function() {
+square.style.display = 'none';
+openBtn.style.display = 'block';
+openBtn2.style.display = 'block';
+openBtn3.style.display = 'block';
+background.classList.remove('blur');
+});
