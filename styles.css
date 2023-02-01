@@ -105,7 +105,16 @@
   
   .title{
     position: absolute;
-    left: 10px;
+    left: 15%;
     top: 10px;
     color: white;
+  }
+
+  .sobre-mi{
+    position: absolute;
+    left: 14%;
+    top: 60px;
+    color: white;
+    width: 70%;
+    text-align: center;
   }
