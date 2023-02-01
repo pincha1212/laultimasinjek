@@ -29,11 +29,12 @@
 /* botón 2 */
 #openBtn2 {
   position: absolute;
-  bottom: 470px; /* valor cambiado */
-  left: 350px;
+  bottom: 430px; /* valor cambiado */
+  left: 240px;
   background-color: transparent;
   border: none;
   z-index: 2;
+  color: white;
 }
 #openBtn2:hover {
   background-color: #3f51b5;
@@ -60,11 +61,11 @@
 
 #square {
   position: fixed;
-  top: 15%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
-  background-image: url(./assets/spider-man-sobre-la-ciudad-11210.png);
+  top: 7%;
+  left: 7%;
+  width: 85%;
+  height: 85%;
+  background-image: url(./assets/go-beyond-mas-alla-4k-ultra.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 0px  ;
@@ -89,7 +90,7 @@
   color: rgb(255, 255, 255);
   }
   #square .content #closeBtn:hover {
-    background-color: #3f51b5;
+    background-color: #b91010;
     transition: all 0.3s ease;
   }
 
@@ -112,9 +113,66 @@
 
   .sobre-mi{
     position: absolute;
-    left: 14%;
+    left: 118px;
     top: 60px;
     color: white;
     width: 70%;
     text-align: center;
   }
+
+  .titulo-datosP{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 130px;
+  } 
+
+.datosP{
+  position: absolute;
+  right: -100px;
+  bottom: 100px;
+  color: white;
+}
+.datosP2{
+  position: absolute;
+  left: 280px;
+  bottom: 30px;
+  color: white;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.redes-sociales img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+#square2{
+  position: fixed;
+  top: 7%;
+  left: 7%;
+  width: 85%;
+  height: 85%;
+  background-image: url(./assets/go-beyond-mas-alla-4k-ultra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px  ;
+  z-index: 3;
+  display: none;
+  border-radius: 10px;
+}
+
+#closeBtn2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border: 0;
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
