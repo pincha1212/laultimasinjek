@@ -1,43 +1,56 @@
-// Selectores de elementos HTML
-const openBtn = document.querySelector('#openBtn');
-const openBtn2 = document.querySelector('#openBtn2');
-const openBtn3 = document.querySelector('#openBtn3');
-const closeBtn = document.querySelector('#closeBtn');
-const closeBtn2 = document.querySelector('#closeBtn2');
-const square = document.querySelector('#square');
-const square2 = document.querySelector('#square2');
+//boton 1 abrir
 
+document.getElementById("openBtn").addEventListener("click", function(){
+document.getElementById("openBtn").style.display = "none";
+document.getElementById("square").style.display = "block";
+document.getElementById("closeBtn").style.display = "block";
+document.getElementById("blurElements").classList.add("blur");
+});
 
+//boton 1 cerrar
 
-const background = document.querySelector('#background');
+document.getElementById("closeBtn").addEventListener("click", function(){
+document.getElementById("openBtn").style.display = "block";
+document.getElementById("square").style.display = "none";
+document.getElementById("closeBtn").style.display = "none";
+document.getElementById("blurElements").classList.remove("blur");
+});
 
+//boton 2 abrir
 
-openBtn.addEventListener('click', function() {
-    square.style.display = 'block';
-    openBtn.style.display = 'none';
-    openBtn2.style.display = 'none';
-    openBtn3.style.display = 'none';
-    background.classList.add('blur');
+document.getElementById("openBtn2").addEventListener("click", function(){
+  document.getElementById("openBtn2").style.display = "none";
+  document.getElementById("square2").style.display = "block";
+  document.getElementById("closeBtn2").style.display = "block";
+  document.getElementById("blurElements").classList.add("blur");
   });
   
-  openBtn2.addEventListener('click', function() {
-    square2.style.display = 'block';
-    background.classList.add('blur');
+  //boton 2 cerrar
+  
+  document.getElementById("closeBtn2").addEventListener("click", function(){
+ 
+  document.getElementById("openBtn2").style.display = "block";
+  document.getElementById("square2").style.display = "none";
+  document.getElementById("closeBtn2").style.display = "none";
+  document.getElementById("blurElements").classList.remove("blur");
   });
   
-  
-  closeBtn.addEventListener('click', function() {
-    square.style.display = 'none';
-    openBtn.style.display = 'block';
-    openBtn2.style.display = 'block';
-    openBtn3.style.display = 'block';
-    background.classList.remove('blur');
-  });
+//boton 3 abrir
 
-
-
-  closeBtn2.addEventListener('click', function() {
-    square2.style.display = 'none';
-    background.classList.remove('blur');
+document.getElementById("openBtn3").addEventListener("click", function(){
+  document.getElementById("openBtn3").style.display = "none";
+  document.getElementById("square3").style.display = "block";
+  document.getElementById("closeBtn3").style.display = "block";
+  document.getElementById("blurElements").classList.add("blur");
   });
   
+  //boton 3 cerrar
+  
+  document.getElementById("closeBtn3").addEventListener("click", function(){
+    document.getElementById("openBtn3").style.display = "block";
+  document.getElementById("square3").style.display = "none";
+  document.getElementById("closeBtn3").style.display = "none";
+  document.getElementById("blurElements").classList.remove("blur");
+  });
+  
+    
