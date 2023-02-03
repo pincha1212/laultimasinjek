@@ -53,4 +53,36 @@ document.getElementById("openBtn3").addEventListener("click", function(){
   document.getElementById("blurElements").classList.remove("blur");
   });
   
-    
+
+
+const carousel = document.querySelector("#carousel-img");
+const squares = carousel.querySelectorAll(".square-item");
+const previousButton = carousel.querySelector(".previous");
+const nextButton = carousel.querySelector(".next");
+
+let currentIndex = 0;
+
+function showSquare(index) {
+  squares.forEach((square, i) => {
+    square.style.display = "none";
+  });
+  squares[index].style.display = "block";
+}
+
+previousButton.addEventListener("click", () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = squares.length - 1;
+  }
+  showSquare(currentIndex);
+});
+
+nextButton.addEventListener("click", () => {
+  currentIndex++;
+  if (currentIndex >= squares.length) {
+    currentIndex = 0;
+  }
+  showSquare(currentIndex);
+});
+
+showSquare(currentIndex);

@@ -112,9 +112,14 @@
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206,89,55,0);
     color: #FFFFFF;
   }
+
+  .subtitulo{
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+  }
   
   .descripcion {
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206,89,55,0);
     color: white;
   }
 
@@ -126,3 +131,94 @@
     padding-left: 3px;
     padding-top: 3px;
   }
+
+
+
+  #carousel-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  .square-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .square-item {
+    height: 95%;
+    width: 95%;
+    margin: 10px;
+  }
+
+  .popup{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .previous, .next{
+    z-index: 4;
+  }
+
+  .previous{
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+  }
+
+  .next{
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+  }
+
+  #carousel-img .square-carousel .popup h3.subtitulo.cuadrado {
+    margin-top: 40px;
+  }
+
+  .datosP2{
+    padding-left: 150px;
+  }
+  
+
+  .red {
+
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
+  
+  .brown {
+    background-color: brown;
+  }
+
