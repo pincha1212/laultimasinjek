@@ -54,3 +54,26 @@ nextButton.addEventListener("click", () => {
 });
 
 showSquare(currentIndex);
+
+
+//ANIMACIONES FOR GSAP
+
+const titulo = document.querySelector('.titulo');
+
+gsap.from(titulo, {
+  duration: 3,
+  opacity: 0,
+  scale: 0.5,
+  ease: 'bounce'
+});
+
+document.addEventListener('mousemove', (e) => {
+  const x = (e.clientX * 100 / window.innerWidth) - 50;
+  const y = (e.clientY * 100 / window.innerHeight) - 50;
+
+  gsap.to(titulo, {
+    duration: 0.5,
+    x: x,
+    y: y
+  });
+});

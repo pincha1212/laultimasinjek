@@ -178,21 +178,75 @@
     transform: translate(-50%, -50%);
   }
 
+
+
+
+
+  .arrow-right, 
+  .arrow-left {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .arrow-right-inner {
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #bcbbbb6a;
+  }
+
+  
+
+  
+  .arrow-left-inner {
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #bcbbbb6a;
+  }
+
+.arrow-left:hover .arrow-left-inner {
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid white;
+}
+
+.arrow-right:hover .arrow-right-inner{
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid white;
+}
+  
+
+
   .previous, .next{
     z-index: 4;
+    bottom: 45%;
+    background-color: transparent;
+    border: hidden;
   }
 
   .previous{
     font-weight: bold;
     position: absolute;
-    left: 0px;
-    bottom: 50%;
+    left: -70px;
+
   }
 
   .next{
     position: absolute;
-    right: 0px;
-    bottom: 50%;
+    right: -70px;
+ 
   }
 
   #carousel-img .square-carousel .popup h3.subtitulo.cuadrado {
