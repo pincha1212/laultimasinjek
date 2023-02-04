@@ -86,3 +86,5 @@ nextButton.addEventListener("click", () => {
 });
 
 showSquare(currentIndex);
+
+

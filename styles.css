@@ -9,6 +9,12 @@
     z-index: -1;
   }
 
+  .nombre{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+  }
+
   .boton1{
     position: absolute;
     left: 200px;
@@ -132,7 +138,15 @@
     padding-top: 3px;
   }
 
+  .g-background-default {
+    background-color: transparent;
+}
 
+  #audio{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+  }
 
   #carousel-img {
     display: flex;
@@ -186,39 +200,11 @@
   }
 
   .datosP2{
-    padding-left: 150px;
+    padding-left: 80px;
   }
   
-
-  .red {
-
-  }
+.c3{
+  padding-top: 100px;
+}
   
-  .blue {
-    background-color: blue;
-  }
   
-  .green {
-    background-color: green;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
-  
-  .purple {
-    background-color: purple;
-  }
-  
-  .orange {
-    background-color: orange;
-  }
-  
-  .pink {
-    background-color: pink;
-  }
-  
-  .brown {
-    background-color: brown;
-  }
-
