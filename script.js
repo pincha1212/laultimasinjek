@@ -1,59 +1,27 @@
-//boton 1 abrir
+function toggleDisplay(openBtnId, closeBtnId, squareId) {
+  const openBtn = document.getElementById(openBtnId);
+  const closeBtn = document.getElementById(closeBtnId);
+  const square = document.getElementById(squareId);
+  const blurElements = document.getElementById("blurElements");
 
-document.getElementById("openBtn").addEventListener("click", function(){
-document.getElementById("openBtn").style.display = "none";
-document.getElementById("square").style.display = "block";
-document.getElementById("closeBtn").style.display = "block";
-document.getElementById("blurElements").classList.add("blur");
-});
-
-//boton 1 cerrar
-
-document.getElementById("closeBtn").addEventListener("click", function(){
-document.getElementById("openBtn").style.display = "block";
-document.getElementById("square").style.display = "none";
-document.getElementById("closeBtn").style.display = "none";
-document.getElementById("blurElements").classList.remove("blur");
-});
-
-//boton 2 abrir
-
-document.getElementById("openBtn2").addEventListener("click", function(){
-  document.getElementById("openBtn2").style.display = "none";
-  document.getElementById("square2").style.display = "block";
-  document.getElementById("closeBtn2").style.display = "block";
-  document.getElementById("blurElements").classList.add("blur");
+  openBtn.addEventListener("click", function() {
+    openBtn.style.display = "none";
+    square.style.display = "block";
+    closeBtn.style.display = "block";
+    blurElements.classList.add("blur");
   });
-  
-  //boton 2 cerrar
-  
-  document.getElementById("closeBtn2").addEventListener("click", function(){
- 
-  document.getElementById("openBtn2").style.display = "block";
-  document.getElementById("square2").style.display = "none";
-  document.getElementById("closeBtn2").style.display = "none";
-  document.getElementById("blurElements").classList.remove("blur");
-  });
-  
-//boton 3 abrir
 
-document.getElementById("openBtn3").addEventListener("click", function(){
-  document.getElementById("openBtn3").style.display = "none";
-  document.getElementById("square3").style.display = "block";
-  document.getElementById("closeBtn3").style.display = "block";
-  document.getElementById("blurElements").classList.add("blur");
+  closeBtn.addEventListener("click", function() {
+    openBtn.style.display = "block";
+    square.style.display = "none";
+    closeBtn.style.display = "none";
+    blurElements.classList.remove("blur");
   });
-  
-  //boton 3 cerrar
-  
-  document.getElementById("closeBtn3").addEventListener("click", function(){
-    document.getElementById("openBtn3").style.display = "block";
-  document.getElementById("square3").style.display = "none";
-  document.getElementById("closeBtn3").style.display = "none";
-  document.getElementById("blurElements").classList.remove("blur");
-  });
-  
+}
 
+toggleDisplay("openBtn", "closeBtn", "square");
+toggleDisplay("openBtn2", "closeBtn2", "square2");
+toggleDisplay("openBtn3", "closeBtn3", "square3");
 
 const carousel = document.querySelector("#carousel-img");
 const squares = carousel.querySelectorAll(".square-item");
@@ -86,5 +54,3 @@ nextButton.addEventListener("click", () => {
 });
 
 showSquare(currentIndex);
-
-
