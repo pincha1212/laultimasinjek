@@ -67,13 +67,3 @@ gsap.from(nombre, {
   ease: 'bounce'
 });
 
-document.addEventListener('mousemove', (e) => {
-  const x = (e.clientX * 100 / window.innerWidth) - 50;
-  const y = (e.clientY * 100 / window.innerHeight) - 50;
-
-  gsap.to(nombre, {
-    duration: 0.5,
-    x: x,
-    y: y
-  });
-});
