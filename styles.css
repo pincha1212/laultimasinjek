@@ -70,8 +70,8 @@ button:focus {
   .close{
     color: white;
     position: absolute;
-    right: 104px;
-    top: 46px;
+    right: 8.5%;
+    top: 7.9%;
     z-index: 3;
     width: 30px;
     height: 30px;
@@ -166,12 +166,13 @@ button:focus {
   }
 
   .social-icon{
-    width: 50px;
-    height: 50px;
     display: block;
     margin-bottom: 10px;
     padding-left: 3px;
     padding-top: 3px;
+  }
+  .social-icon img{
+    width: 50px;
   }
 
   .g-background-default {
@@ -364,20 +365,15 @@ button:focus {
   }
 
   .social-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-
-  #audio {
-    float: left;
     position: absolute;
-    bottom: 0;
-    right: 0;
-
+    width: 30px;
   }
-  #audio ifame{
-    width: 130px;
-    height: 70px;
+  .float-left {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #audio {
+    display: none;
+
   }
 }
