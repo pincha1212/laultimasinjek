@@ -344,4 +344,40 @@ button:focus {
     bottom: 0%;
     left: 8%;
   }
+
+  /*square*/
+
+  .cuadrado {
+    width: 100%;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .descripcion {
+    font-size: 12px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  #audio {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+  }
+  #audio ifame{
+    width: 130px;
+    height: 70px;
+  }
 }
