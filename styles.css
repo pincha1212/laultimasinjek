@@ -1,14 +1,16 @@
 .background {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: 100vh;
   background-image: url(./assets/23626-Age-Of-Empires-IV-4k-Ultra-HD-Wallpaper.png);
   z-index: -1;
+  width: 100%;
+  overflow: hidden;
   }
 
   button {
     background-color: transparent;
-    color: #CE5937;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -36,26 +38,46 @@ button:focus {
     left: 35%;
   }
 
-  .boton1{
+  .boton1, .boton2, .boton3{
     position: absolute;
-    left: 200px;
-    bottom: 350px;
+  }
+
+  .boton1{
+    left: 25%;
+    top: 34%;
   }
 
   .boton2{
-    position: absolute;
-    left: 555px;
-    top: 120px;
+    left: 45%;
+    top: 12%;
   }
 
   .boton3{
-    position: absolute;
-    right: 200px;
-    top: 130px;
+    right: 27%;
+    top: 19%;
   }
 
   #closeBtn, #closeBtn2, #closeBtn3{
     display: none;
+  }
+
+  .close{
+    color: white;
+    position: absolute;
+    right: 104px;
+    top: 46px;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .close:hover{
+    color: white;
+    background-color: red;
+  }
+
+  .close:focus{
+    outline: none;
   }
 
   .square, .square2, .square3 {
@@ -98,24 +120,7 @@ button:focus {
     border-radius: 20px;
   }
 
-  .close{
-    color: white;
-    position: absolute;
-    right: 104px;
-    top: 46px;
-    z-index: 3;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-  }
-  .close:hover{
-    color: white;
-    background-color: red;
-  }
 
-  .close:focus{
-    outline: none;
-  }
 
   #blurElements {
     display: flex;
@@ -288,7 +293,22 @@ button:focus {
   
   
 @media only screen and (max-width: 768px) {
-  .responsive-background {
-    background-size: contain;
+  .background {
+    background-size: cover;
+  }
+
+  .boton1{
+    left: 10%;
+    bottom: 25%;
+  }
+
+  .boton2{
+    left: 45%;
+    top: 8%;
+  }
+
+  .boton3{
+    right: 10%;
+    top: 8%;
   }
 }
