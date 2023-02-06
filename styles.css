@@ -297,5 +297,15 @@ button:focus {
     background-size: cover;
   }
 
+  .moviles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .boton1,
+  .boton2,
+  .boton3{
+    position: relative;
+  }
 }
