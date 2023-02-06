@@ -58,9 +58,9 @@ showSquare(currentIndex);
 
 //ANIMACIONES FOR GSAP
 
-const titulo = document.querySelector('.titulo');
+const nombre = document.querySelector('.nombre');
 
-gsap.from(titulo, {
+gsap.from(nombre, {
   duration: 3,
   opacity: 0,
   scale: 0.5,
@@ -71,7 +71,7 @@ document.addEventListener('mousemove', (e) => {
   const x = (e.clientX * 100 / window.innerWidth) - 50;
   const y = (e.clientY * 100 / window.innerHeight) - 50;
 
-  gsap.to(titulo, {
+  gsap.to(nombre, {
     duration: 0.5,
     x: x,
     y: y
