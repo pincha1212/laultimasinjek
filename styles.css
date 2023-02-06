@@ -297,18 +297,15 @@ button:focus {
     background-size: cover;
   }
 
-  .boton1{
-    left: 10%;
-    bottom: 25%;
+  .boton1,
+  .boton2,
+  .boton3 {
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
-  .boton2{
-    left: 45%;
-    top: 8%;
-  }
-
-  .boton3{
-    right: 10%;
-    top: 8%;
-  }
 }
