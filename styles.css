@@ -297,15 +297,5 @@ button:focus {
     background-size: cover;
   }
 
-  .boton1,
-  .boton2,
-  .boton3 {
-    position: relative;
-    left: 50%;
-    bottom: 50%;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
 
 }
