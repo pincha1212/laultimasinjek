@@ -57,7 +57,6 @@ nextButton.addEventListener("click", () => {
 
 showSquare(currentIndex);
 
-
 //ANIMACIONES FOR GSAP
 
 const nombre = document.querySelector('.nombre');
