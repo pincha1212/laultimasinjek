@@ -1,3 +1,5 @@
+/*Pantalla de carga*/
+
 #loading {
   background-color: black;
   position: absolute;
@@ -30,6 +32,8 @@
   margin-top: 20px;
 }
 
+/*Fondo de Pantalla*/
+
 .background {
   background-size: contain;
   background-position: center;
@@ -39,6 +43,8 @@
   width: 100%;
   overflow: hidden;
   }
+
+/*Botones*/
 
   button {
     background-color: transparent;
@@ -67,35 +73,31 @@ button:focus {
   background-color: #371d58;
 }
 
-
-
-  .nombre{
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206,89,55,0);
-    color: #FFFFFF;
-    font-weight: bold;
-  }
-
-  .boton1, .boton2, .boton3{
-    position: absolute;
-  }
-
-  .boton1{
+.boton1{
     left: 25%;
     top: 34%;
-  }
+}
 
-  .boton2{
+.boton2{
     left: 45%;
     top: 12%;
   }
 
-  .boton3{
+.boton3{
     right: 27%;
     top: 19%;
-  }
+}
+
+.boton1, .boton2, .boton3{
+    position: absolute;
+}
+
+
+
+
+
+
+/*Boton "X"*/
 
   #closeBtn, #closeBtn2, #closeBtn3{
     display: none;
@@ -122,10 +124,26 @@ button:focus {
     outline: none;
   }
 
+  /*TITULO CON EL NOMBRE*/
+
+  .nombre{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206,89,55,0);
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+  /*Square 1, 2, 3*/
+
   .square, .square2, .square3 {
     position: absolute;
     z-index: 2;
   }
+
+  /*DATOS PERSONALES*/
+
   .fondo1{
     background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
     background-size: cover;
@@ -138,55 +156,7 @@ button:focus {
     top: 7%;
   }
 
-  .fondo2{
-    position: absolute;
-    width: 85vw;
-    height: 85vh;
-    left: -107%;
-    top: 7%;
-    border-radius: 20px;
-    background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .fondo3{
-    background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 85vw;
-    height: 85vh;
-    left: -107%;
-    top: 7%;
-    border-radius: 20px;
-  }
-
-  .coming-soon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-
-
-
-  #blurElements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .blur {
-    filter: blur(5px);
-  }
-
-
-
-
-  .cuadrado{
+.cuadrado{
     text-align: center;
   }
 
@@ -205,7 +175,7 @@ button:focus {
     color: white;
     font-weight: bold;
   }
-  
+
   .descripcion {
     color: white;
   }
@@ -220,16 +190,25 @@ button:focus {
     width: 50px;
   }
 
-  .g-background-default {
-    background-color: transparent;
-}
-
   #audio{
     position: absolute;
     bottom: 10px;
     right: 50px;
   }
 
+  /*HABILIDADES*/
+
+  .fondo2{
+    position: absolute;
+    width: 85vw;
+    height: 85vh;
+    left: -107%;
+    top: 7%;
+    border-radius: 20px;
+    background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   #carousel-img {
     display: flex;
     align-items: center;
@@ -260,10 +239,6 @@ button:focus {
     transform: translate(-50%, -50%);
   }
 
-
-
-
-
   .arrow-right, 
   .arrow-left {
     width: 50px;
@@ -282,9 +257,6 @@ button:focus {
     border-left: 25px solid #bcbbbb6a;
   }
 
-  
-
-  
   .arrow-left-inner {
     width: 0; 
     height: 0; 
@@ -308,8 +280,6 @@ button:focus {
   border-bottom: 25px solid transparent;
   border-left: 25px solid white;
 }
-  
-
 
   .previous, .next{
     z-index: 4;
@@ -342,7 +312,47 @@ button:focus {
 .c3{
   padding-top: 100px;
 }
+
+/*PROYECTOS(BETA)*/
+
+.fondo3{
+    background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 85vw;
+    height: 85vh;
+    left: -107%;
+    top: 7%;
+    border-radius: 20px;
+  }
+
+.coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
   
+/*Desenfoque del fondo*/
+
+#blurElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.blur {
+    filter: blur(5px);
+  }
+
+
+
+  
+
+
+/*ADAPTACION PARA MOVILES(BETA)*/
   
 @media only screen and (max-width: 768px) {
   .background {
