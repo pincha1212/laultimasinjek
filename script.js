@@ -7,14 +7,16 @@ function toggleDisplay(openBtnId, closeBtnId, squareId) {
   openBtn.addEventListener("click", function() {
     openBtn.style.display = "none";
     square.style.display = "block";
-    closeBtn.style.display = "block";
-    blurElements.classList.add("blur");
+    gsap.to(square, {duration: 1, x: '134.5%', y: '0%', onComplete: function() {
+      blurElements.classList.add("blur");closeBtn.style.display = "block";
+    }});
   });
+  
 
   closeBtn.addEventListener("click", function() {
-    openBtn.style.display = "block";
-    square.style.display = "none";
     closeBtn.style.display = "none";
+    openBtn.style.display = "block";
+    gsap.to(square, {duration: 0.5, x: '-134.5%', y: '0%'});
     blurElements.classList.remove("blur");
   });
 }
@@ -60,10 +62,17 @@ showSquare(currentIndex);
 
 const nombre = document.querySelector('.nombre');
 
-gsap.from(nombre, {
-  duration: 3,
-  opacity: 0,
-  scale: 0.5,
-  ease: 'bounce'
+const animation = gsap.from(nombre, {
+duration: 3,
+opacity: 0,
+scale: 0.5,
+ease: 'bounce'
 });
 
+nombre.addEventListener('mouseenter', () => {
+animation.reverse(1);
+});
+
+nombre.addEventListener('mouseleave', () => {
+animation.play();
+});
