@@ -1,3 +1,27 @@
+const loading = document.getElementById("loading");
+const loadingCircles = document.querySelectorAll(".loading-circle");
+
+gsap.from(loadingCircles, {
+  duration: 1,
+  opacity: 0,
+  scale: 0.5,
+  ease: "bounce",
+  stagger: 0.2,
+  repeat: -1,
+  yoyo: true
+});
+
+setTimeout(function() {
+  gsap.to(loading, {
+    duration: 0.5,
+    opacity: 0,
+    onComplete: function() {
+      loading.style.display = "none";
+    }
+  });
+}, 5000);
+
+
 function toggleDisplay(openBtnId, closeBtnId, squareId) {
   const openBtn = document.getElementById(openBtnId);
   const closeBtn = document.getElementById(closeBtnId);
