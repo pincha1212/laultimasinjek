@@ -29,17 +29,26 @@ function toggleDisplay(openBtnId, closeBtnId, squareId) {
   const blurElements = document.getElementById("blurElements");
   const previousBtn = square.querySelector('.previous');
   const nextBtn = square.querySelector('.next');
+
+
   
-  openBtn.addEventListener("click", function() {
-  openBtn.style.display = "none";
-  square.style.display = "block";
-  gsap.to(square, {duration: 1, x: '134.5%', y: '0%', onComplete: function() {
-  blurElements.classList.add("blur");
-  closeBtn.style.display = "block";
-  gsap.fromTo(previousBtn, {opacity: 0}, {duration: 1, delay: 0.5, opacity: 1});
-  gsap.fromTo(nextBtn, {opacity: 0}, {duration: 1, delay: 0.5, opacity: 1});
-  }});
-  });
+openBtn.addEventListener("click", function() {
+openBtn.style.display = "none";
+square.style.display = "block";
+gsap.to(square, {duration: 1, x: '134.5%', y: '0%', onComplete: function() {
+blurElements.classList.add("blur");
+closeBtn.style.display = "block";
+gsap.fromTo(previousBtn, {opacity: 0}, {duration: 1, delay: 0.5, opacity: 1});
+gsap.fromTo(nextBtn, {opacity: 0}, {duration: 1, delay: 0.5, opacity: 1});
+gsap.fromTo(descripcion1, {opacity: 0, x: 100}, {duration: 1, delay: 0.5, opacity: 1, x:0});
+gsap.fromTo(titulo1, {opacity: 0, x: -100}, {duration: 1, delay: 1, opacity: 1, x: 0});
+gsap.fromTo(subtitulo1, {opacity: 0, x: 100}, {duration: 1, delay: 1.5, opacity: 1, x: 0});
+gsap.fromTo(socialIcon, {opacity: 0, x: -100}, {duration: 1, delay: 2, opacity: 1, x: 0});
+
+}});
+});
+
+
   
   closeBtn.addEventListener("click", function() {
   closeBtn.style.display = "none";
@@ -52,6 +61,9 @@ function toggleDisplay(openBtnId, closeBtnId, squareId) {
   toggleDisplay("openBtn", "closeBtn", "square");
   toggleDisplay("openBtn2", "closeBtn2", "square2");
   toggleDisplay("openBtn3", "closeBtn3", "square3");
+
+
+
 
 const carousel = document.querySelector("#carousel-img");
 const squares = carousel.querySelectorAll(".square-item");
