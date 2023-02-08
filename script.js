@@ -3,27 +3,31 @@ function toggleDisplay(openBtnId, closeBtnId, squareId) {
   const closeBtn = document.getElementById(closeBtnId);
   const square = document.getElementById(squareId);
   const blurElements = document.getElementById("blurElements");
-
+  const previousBtn = square.querySelector('.previous');
+  const nextBtn = square.querySelector('.next');
+  
   openBtn.addEventListener("click", function() {
-    openBtn.style.display = "none";
-    square.style.display = "block";
-    gsap.to(square, {duration: 1, x: '134.5%', y: '0%', onComplete: function() {
-      blurElements.classList.add("blur");closeBtn.style.display = "block";
-    }});
+  openBtn.style.display = "none";
+  square.style.display = "block";
+  gsap.to(square, {duration: 1, x: '134.5%', y: '0%', onComplete: function() {
+  blurElements.classList.add("blur");
+  closeBtn.style.display = "block";
+  gsap.fromTo(previousBtn, {opacity: 0}, {duration: 1, delay: 0.5, opacity: 1});
+  gsap.fromTo(nextBtn, {opacity: 0}, {duration: 1, delay: 0.5, opacity: 1});
+  }});
   });
   
-
   closeBtn.addEventListener("click", function() {
-    closeBtn.style.display = "none";
-    openBtn.style.display = "block";
-    gsap.to(square, {duration: 0.5, x: '-134.5%', y: '0%'});
-    blurElements.classList.remove("blur");
+  closeBtn.style.display = "none";
+  openBtn.style.display = "block";
+  gsap.to(square, {duration: 0.5, x: '-134.5%', y: '0%'});
+  blurElements.classList.remove("blur");
   });
-}
-
-toggleDisplay("openBtn", "closeBtn", "square");
-toggleDisplay("openBtn2", "closeBtn2", "square2");
-toggleDisplay("openBtn3", "closeBtn3", "square3");
+  }
+  
+  toggleDisplay("openBtn", "closeBtn", "square");
+  toggleDisplay("openBtn2", "closeBtn2", "square2");
+  toggleDisplay("openBtn3", "closeBtn3", "square3");
 
 const carousel = document.querySelector("#carousel-img");
 const squares = carousel.querySelectorAll(".square-item");

@@ -24,13 +24,15 @@
 }
 
 button:hover {
-  background-color: #371d58;
   cursor: pointer;
 }
 
 button:focus {
   text-decoration: underline;
   outline: none;
+}
+.moviles button:hover{
+  background-color: #371d58;
 }
 
 
