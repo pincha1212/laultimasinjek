@@ -112,7 +112,9 @@ button:focus {
     height: 30px;
     border-radius: 10px;
   }
-  .close:hover{
+   #closeBtn:hover,
+   #closeBtn2:hover,
+   #closeBtn3:hover{
     color: white;
     background-color: red;
   }
