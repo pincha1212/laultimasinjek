@@ -82,7 +82,6 @@ playButton.addEventListener("click", function() {
   playButton.style.display = "none";
   audio.style.display = "block";
   closeButton.style.display = "block";
-  gsap.from(audio, {duration: 2, opacity: 1, y: 0, ease: "bounce",delay: 2});
 });
 
 var closeButton = document.querySelector("#close-button");
@@ -92,7 +91,6 @@ closeButton.addEventListener("click", function() {
   playButton.style.display = "block";
   audio.style.display = "none";
   closeButton.style.display = "none";
-  gsap.to(audio, {duration: 1, opacity: 0, y: 0, ease: "bounce", delay:2});
 });
 
   

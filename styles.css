@@ -92,6 +92,10 @@ button:focus {
     position: absolute;
 }
 
+.boton1, .boton2, .boton3:hover{
+  width: 130px;
+
+}
 
 
 
@@ -184,7 +188,7 @@ button:focus {
     left: 25%;
     top: 16%;
     position: absolute;
-    color: white;
+    color: #FFF;
   }
 
   .social-icon{
@@ -195,8 +199,14 @@ button:focus {
   }
   .social-icon img{
     width: 50px;
+    height: 50px;
     margin: 5px;
   }
+  .social-icon img:hover{
+    width: 45px;
+    height: 45px;
+  }
+
 
   .music-button{
     background-size: cover;
@@ -210,23 +220,32 @@ button:focus {
       cursor: pointer;
   }
 
+  .music-button:hover{
+    width: 45px;
+    height: 45px;
+  }
+
+
   #close-button{
-    position: fixed;
+    position: absolute;
     width: 50px;
     height: 50px;
-    bottom: 28%;
+    bottom: 23%;
     right: 28%;
   }
 
   #close-button:hover{
     color: white;
     background-color: red;
+    width: 3%;
+    height: 8%;
+    
   }
 
   #audio{
     position: absolute;
     bottom: 10px;
-    right: 50px;
+    right: 40px;
   }
 
   /*HABILIDADES*/
