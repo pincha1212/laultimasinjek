@@ -265,10 +265,37 @@ button:focus {
     left: -107%;
     top: 7%;
     border-radius: 20px;
-    background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
+    background-image: url('./assets/Picsart_23-02-09_23-01-39-421.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
+  .titulo2{
+    position: absolute;
+    top: 10px;
+    left: 39%;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206,89,55,0);
+    color: #FFFFFF;
+  }
+
+  .subtitulo2{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  .subtitulo2:hover{
+    background-color: #371d58;
+  }
+
+  .menu-desplegable2{
+    display: none;
+  }
+
   #carousel-img {
     display: flex;
     align-items: center;
@@ -373,10 +400,141 @@ button:focus {
   padding-top: 100px;
 }
 
+.menu-desplegable2{
+  display: none;  
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-desplegable2 li{
+  padding-bottom: 5%;
+  padding-top: 5%;
+  color: white; 
+  display: block;
+}
+
+.menu-desplegable2 button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+
+
+.cuadrado4 {
+  width: 86vw;
+  height: 86vh;
+  position: absolute;
+  top: -32%;
+  left: -5%;
+  display: none;
+  border-radius: 20px;
+  z-index: 4;
+  
+}
+
+.cuadrado4-html {
+  background-image: url('./assets/Picsart_23-02-09_23-03-38-758.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.btn-html {
+  background-color: #F16529;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+.cuadrado4-css {
+  background-image: url('./assets/Picsart_23-02-09_23-01-39-421.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cuadrado4-javascript {
+  background-image: url('./assets/Picsart_23-02-09_23-00-52-180.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.close-html,
+.close-css,
+.close-javascript {
+  position: absolute;
+  right: 0.6%;
+  top: 0.6%;
+  z-index: 5;
+  background-color: transparent;
+  color:#bcbbbb6a;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.close-html:hover,
+.close-css:hover,
+.close-javascript:hover{
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn-css {
+  background-color: #1572B6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-javascript {
+  background-color: #F7DF1E;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 /*PROYECTOS(BETA)*/
 
 .fondo3{
-    background-image: url('./assets/spider-man-sobre-la-ciudad-11210.png');
+  background-position: center;
+    background-image: url('./assets/Picsart_23-02-09_23-03-38-758.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -407,6 +565,17 @@ button:focus {
     filter: blur(5px);
   }
 
+  .progress-bar {
+    width: 90%;
+    background-color: #4CAF50;
+  }
+
+
+
+
+@media only screen and (max-width: 990px){
+  .progress{ margin-bottom: 20px; }
+}
 
 
   
