@@ -230,6 +230,23 @@ closeBtnHTML.addEventListener("click", function() {
 });
 
 
+// Seleccionar los elementos con las clases correspondientes
+const title1 = document.querySelector('.title1');
+const subtitle1 = document.querySelector('.subtitle1');
+const code1 = document.querySelector('.code');
+const iframe1 = document.querySelector('.iframe1');
+const description1 = document.querySelector('.description1');
+
+// Crear la animación con GSAP
+gsap.to(title1, { duration: 1, y: -50, opacity: 1 });
+gsap.to(subtitle1, { duration: 1, y: 50, opacity: 1 });
+gsap.to(code1, { duration: 1, x: -50, opacity: 1 });
+gsap.to(iframe1, { duration: 1, x: 50, opacity: 1 });
+gsap.to(description1, { duration: 1, y: -50, opacity: 1 });
+
+
+
+
 // Botón de apertura para CSS
 const openBtnCSS = document.querySelector('.btn-css');
 // Botón de cierre para CSS
@@ -241,7 +258,7 @@ openBtnCSS.addEventListener("click", function() {
 previousButton.style.display = 'none';
 nextButton.style.display = 'none';
 squareCSS.style.display = "block";
-closeBtnCSS.style.display = "block";
+closeBtnCSS.style.display = "block";focus
 closeBtn2.style.display = "none";
 });
 

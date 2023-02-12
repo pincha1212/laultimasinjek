@@ -66,11 +66,12 @@ button:hover {
 }
 
 button:focus {
-  text-decoration: underline;
+  text-decoration: none;
   outline: none;
 }
 .moviles button:hover{
   background-color: #371d58;
+  border-radius: 10px;
 }
 
 .boton1{
@@ -100,10 +101,11 @@ button:focus {
 
   #closeBtn, #closeBtn2, #closeBtn3{
     display: none;
+    color: #bcbbbb6a;
   }
 
   .close{
-    color: white;
+    color: #bcbbbb6a;
     position: absolute;
     right: 8.5%;
     top: 7.9%;
@@ -121,6 +123,7 @@ button:focus {
 
   .close:focus{
     outline: none;
+    text-decoration: none; 
   }
 
   /*TITULO CON EL NOMBRE*/
@@ -435,15 +438,17 @@ button:focus {
   display: none;
   border-radius: 20px;
   z-index: 4;
+  overflow-y: scroll;
   
 }
+
 
 .cuadrado4-html {
   background-image: url('./assets/Picsart_23-02-09_23-03-38-758.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  background-attachment: fixed;
 }
 .btn-html {
   background-color: #F16529;
@@ -454,6 +459,70 @@ button:focus {
   font-size: 18px;
   cursor: pointer;
 }
+
+.title1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  top: 10%;
+  left: 51%;
+  
+}
+
+.subtitle1 {
+  position: absolute;
+  top: 2%;
+  left: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.description1 {
+  position: absolute;
+  top: 28%;
+  left: 20px;
+  font-size: 18px;
+  color: white;
+  text-align:justify;
+}
+
+.description2 {
+  position: absolute;
+  top: 18%;
+  right: 50px;
+  font-size: 18px;
+  color: white;
+  }
+
+  .code1 {
+    position: absolute;
+    top: 28%;
+    right: 50px;
+    font-size: 15px;
+    }
+
+.iflame1 {
+  width: 500px;
+  height: 370px;
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  
+  }
+
+  .line {
+    position: absolute;
+    top: 120%;
+    left: 20px;
+    width: 98%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+    }
+
 
 
 
@@ -474,9 +543,8 @@ button:focus {
 .close-html,
 .close-css,
 .close-javascript {
-  position: absolute;
-  right: 0.6%;
-  top: 0.6%;
+  right: -0.5%;
+  top: -4.5%;
   z-index: 5;
   background-color: transparent;
   color:#bcbbbb6a;
@@ -491,6 +559,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 
 }
 
@@ -500,6 +569,12 @@ button:focus {
   background-color: red;
 }
 
+.close-html:focus,
+.close-css:focus,
+.close-javascript:focus{
+  text-decoration: none;
+  outline: none;
+}
 
 
 
@@ -565,17 +640,6 @@ button:focus {
     filter: blur(5px);
   }
 
-  .progress-bar {
-    width: 90%;
-    background-color: #4CAF50;
-  }
-
-
-
-
-@media only screen and (max-width: 990px){
-  .progress{ margin-bottom: 20px; }
-}
 
 
   
