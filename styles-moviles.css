@@ -23,44 +23,44 @@
 
     /* Agregar estilo CSS para los botones "toggle-btn"*/
     .toggle-btn {
-    display: none;
+      z-index: 0;
+      left: 10px;
+      top: 10px;
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      position: absolute;
+      width: 40px;
     }
     
-    .toggle-btn.show {
-    display: inline-block;
+    .line {
+      position: fixed;
+      background-color: black;
+      border-radius: 4px;
+      display: block;
+      height: 4px;
+      margin: 6px 0;
+      width: 100%;
     }
-    .toggle-all {
-      position: absolute;
-      top: 0;
-      z-index: 0;
-      background-color: #333;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      margin-bottom: 10px;
+    
+    .toggle-btn .line:first-child {
+      transform: translate(-12px, -32px) ;
+    }
+    
+    .toggle-btn .line:nth-child(2) {
+      transform: translate(-12px, -36px) ;
+    }
+    
+    .toggle-btn .line:last-child {
+      transform: translate(-12px , -40px);
+    }
+    
+    .toggle-btn:focus {
+      outline: none;
+    }
+    
 
-      }
-      
-      .toggle-all:hover {
-      background-color: #fff;
-      color: #333;
-      }
-
-    .toggle-btn {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      }
-      
-      .toggle-btn:hover {
-      background-color: #fff;
-      color: #333;
-      }
+  
       .boton1, .boton2, .boton3 {
         position: absolute;
         left: 0;
@@ -80,5 +80,8 @@
         width: 114px;
         height: 44px;
         font-size: 14px;
+      }
+      .boton {
+        display: none;
       }
   }

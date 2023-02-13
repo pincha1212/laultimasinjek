@@ -115,7 +115,7 @@ for (var i = 0; i < subtitulos.length; i++) {
 
 
 
-
+let menuAbierto = null;
 
 document.addEventListener('click', function(event) {
   if (menuAbierto && !event.target.closest('.subtitulo2')) {

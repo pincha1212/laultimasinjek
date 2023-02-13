@@ -1,11 +1,12 @@
-// Función para mostrar u ocultar botones "toggle-btn"
-function toggleAll() {
-    var botones = document.querySelectorAll(".toggle-btn");
-    for (var i = 0; i < botones.length; i++) {
-    botones[i].classList.toggle("show");
-    }
-    }
-    
-    // Agregar evento click al botón "toggle-all"
-    document.querySelector(".toggle-all").addEventListener("click", toggleAll);
-    
+const toggleBtn = document.querySelector('.toggle-btn');
+const botones = document.querySelectorAll('.boton');
+let isOpen = false;
+
+toggleBtn.addEventListener('click', function() {
+  if (!isOpen) {
+    botones.forEach(boton => boton.style.display = 'block');
+  } else {
+    botones.forEach(boton => boton.style.display = 'none');
+  }
+  isOpen = !isOpen;
+});

@@ -71,7 +71,7 @@ button:focus {
   text-decoration: none;
   outline: none;
 }
-.moviles button:hover{
+ button:hover{
   background-color: #371d58;
   border-radius: 10px;
 }
@@ -643,7 +643,7 @@ button:focus {
   }
 
   @media only screen and (min-width: 600px) {
-    .toggle-all {
+    .toggle-btn {
       display: none;
     }
 
