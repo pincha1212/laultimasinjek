@@ -20,4 +20,65 @@
       text-align: center;
       transform: translate(-70px, -40px);
     }
+
+    /* Agregar estilo CSS para los botones "toggle-btn"*/
+    .toggle-btn {
+    display: none;
+    }
+    
+    .toggle-btn.show {
+    display: inline-block;
+    }
+    .toggle-all {
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      }
+      
+      .toggle-all:hover {
+      background-color: #fff;
+      color: #333;
+      }
+
+    .toggle-btn {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      }
+      
+      .toggle-btn:hover {
+      background-color: #fff;
+      color: #333;
+      }
+      .boton1, .boton2, .boton3 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      
+      .boton1 {
+        margin-top: 10px;
+      }
+      
+      .boton2 {
+        margin-top: 60px;
+      }
+      
+      .boton3 {
+        margin-top: 110px;
+        width: 114px;
+        height: 44px;
+        font-size: 14px;
+      }
   }

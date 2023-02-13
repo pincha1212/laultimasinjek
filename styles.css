@@ -46,6 +46,8 @@
 
 /*Botones*/
 
+
+
   button {
     background-color: transparent;
     color: white;
@@ -75,22 +77,22 @@ button:focus {
 }
 
 .boton1{
-    left: 25%;
-    top: 34%;
+  left: 1px;
+  top: 50px;
 }
 
 .boton2{
-    left: 45%;
-    top: 12%;
-  }
+  left: 1px;
+  top: 100px;
+}
 
 .boton3{
-    right: 27%;
-    top: 19%;
+  left: 1px;
+  top: 150px;
 }
 
 .boton1, .boton2, .boton3{
-    position: absolute;
+  position: absolute;
 }
 
 
@@ -640,6 +642,37 @@ button:focus {
     filter: blur(5px);
   }
 
+  @media only screen and (min-width: 600px) {
+    .toggle-all {
+      display: none;
+    }
 
+    .boton1 {
+      left: 250px;
+      top: 340px;
+      width: 114px;
+      height: 44px;
+      font-size: 14px;
+      transform: translate(0px, -180px);
+      }
+      
+      .boton2 {
+      left: 450px;
+      top: 120px;
+      width: 114px;
+      height: 44px;
+      font-size: 14px;
+      transform: translate(3px, -40px);
+      }
+      
+      .boton3 {
+        top: 190px;
+        width: 114px;
+        height: 44px;
+        font-size: 14px;
+        transform: translate(650px, -100px);
+      }
+    
+  }
 
   
