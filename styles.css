@@ -294,7 +294,6 @@ button:focus {
     background-color: transparent;
   }
   .subtitulo2:hover{
-    background-color: #371d58;
   }
 
   .menu-desplegable2{
@@ -414,8 +413,6 @@ button:focus {
 }
 
 .menu-desplegable2 li{
-  padding-bottom: 5%;
-  padding-top: 5%;
   color: white; 
   display: block;
 }
@@ -435,7 +432,7 @@ button:focus {
   width: 86vw;
   height: 86vh;
   position: absolute;
-  top: -32%;
+  top: -46%;
   left: -5%;
   display: none;
   border-radius: 20px;
@@ -469,19 +466,19 @@ button:focus {
   flex-direction: row-reverse;
 }
 
-.progress-bar {
+.progress-bar-html {
   height: 10px;
   background-color: #FFF !important;
   width: 100%;
   margin-right: 5px;
 }
 
-.progress-bar:after {
+.progress-bar-html::after {
   content: "";
   display: block;
   background-color: #4CAF50;
   height: 100%;
-  width: 75%;
+  width: 98%;
 }
 
 
@@ -562,11 +559,43 @@ button:focus {
   background-position: center;
 }
 
+.progress-bar-css {
+  height: 10px;
+  background-color: #FFF !important;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.progress-bar-css::after {
+  content: "";
+  display: block;
+  background-color: #4CAF50;
+  height: 100%;
+  width: 95%;
+}
+
+
+
 .cuadrado4-javascript {
   background-image: url('./assets/Picsart_23-02-09_23-00-52-180.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.progress-bar-js {
+  height: 10px;
+  background-color: #FFF !important;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.progress-bar-js::after {
+  content: "";
+  display: block;
+  background-color: #4CAF50;
+  height: 100%;
+  width: 65%;
 }
 
 .close-html,
@@ -604,15 +633,6 @@ button:focus {
   text-decoration: none;
   outline: none;
 }
-
-
-
-
-
-
-
-
-
 
 .btn-css {
   background-color: #1572B6;
