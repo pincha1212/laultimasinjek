@@ -58,6 +58,7 @@ var subtitulo1 = document.querySelectorAll(".subtitulo1");
 var info = document.querySelectorAll(".info");
 var socialIcons = document.querySelector(".social-icon");
 var footer1 = document.querySelector('.footer1');
+var musicIcon = document.querySelector ('.music-container');
 
 descripcion1.addEventListener("mouseenter", function() {
 gsap.to(descripcion1, {duration: 1, scale: 1.2, backgroundColor: "black", borderRadius: "20px", delay: 0.5});
@@ -68,7 +69,7 @@ gsap.to(descripcion1, {duration: 1, scale: 1, backgroundColor: "transparent", bo
 });
 
 openBtn.addEventListener("click", function() {
-gsap.from([titulo1, subtitulo1, info, socialIcons, footer1], {
+gsap.from([titulo1, subtitulo1, info, socialIcons, footer1, musicIcon], {
 duration: 1,
 opacity: 0,
 y: -25,
