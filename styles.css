@@ -293,8 +293,6 @@ button:focus {
     font-weight: bold;
     background-color: transparent;
   }
-  .subtitulo2:hover{
-  }
 
   .menu-desplegable2{
     display: none;
@@ -493,7 +491,7 @@ button:focus {
   font-size: 36px;
   position: absolute;
   top: 10%;
-  left: 51%;
+  left: 49%;
   
 }
 
@@ -574,6 +572,34 @@ button:focus {
   width: 95%;
 }
 
+.subtitle2 {
+  position: absolute;
+  top: 23%;
+  left: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.title2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  top: 8%;
+  left: 49%;
+  
+}
+
+.iflame2 {
+  width: 500px;
+  height: 425px;
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  
+  }
 
 
 .cuadrado4-javascript {
