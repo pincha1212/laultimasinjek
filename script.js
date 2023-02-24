@@ -19,11 +19,10 @@ gsap.from(loadingCircles, {
 setTimeout(function() {
   // Utilizamos GSAP para animar el elemento "loading"
   gsap.to(loading, {
-    duration: 0.5, // Duración de la animación en segundos
-    opacity: 0, // Cambiamos la opacidad a 0 (invisible)
-    // Función que se ejecuta al final de la animación
+    duration: 0.5, 
+    opacity: 0, 
     onComplete: function() {
-      // Ocultamos el elemento "loading"
+
       loading.style.display = "none";
     }
   });
@@ -70,7 +69,7 @@ gsap.to(descripcion1, {duration: 1, scale: 1, backgroundColor: "transparent", bo
 
 openBtn.addEventListener("click", function() {
 gsap.from([titulo1, subtitulo1, info, socialIcons, footer1, musicIcon], {
-duration: 1,
+duration: 0,
 opacity: 0,
 y: -25,
 ease: "bounce",
@@ -82,13 +81,17 @@ stagger: 0.5,
 
 var subtitulos = document.querySelectorAll('.subtitulo2');
 var abierto = null;
+const skillItems = document.querySelectorAll('.menu-desplegable2 li');
 
 for (var i = 0; i < subtitulos.length; i++) {
   subtitulos[i].addEventListener('click', function() {
     var menuDesplegable = this.nextElementSibling;
+    var lista = menuDesplegable.querySelector('ul');
+    var elementosLista = menuDesplegable.querySelectorAll('li');
 
     if (abierto && abierto !== menuDesplegable) {
       gsap.to(abierto, {duration: 0.5, height: 0, display: 'none'});
+      gsap.to(elementosLista, {duration: 0.5, opacity: 0, y: -20});
     }
 
     if (menuDesplegable.style.display === 'block') {
@@ -96,36 +99,38 @@ for (var i = 0; i < subtitulos.length; i++) {
       gsap.to(menuDesplegable, {duration: 0.5, height: 0, display: 'none', onComplete: function() {
         menuDesplegable.style.display = 'none';
       }});
+      gsap.to(elementosLista, {duration: 0.5, opacity: 0, y: -20});
     } else {
       abierto = menuDesplegable;
       gsap.to(menuDesplegable, {duration: 0.5, height: 'auto', display: 'block', ease: "bounce"});
+      gsap.to(elementosLista, {duration: 0.5, opacity: 1, y: 0, stagger: 0.1});
     }
   });
-}
-
-for (var i = 0; i < subtitulos.length; i++) {
+  for (let i = 0; i < skillItems.length; i++) {
+    skillItems[i].addEventListener('mouseenter', function() {
+      gsap.to(skillItems, {
+        duration: 0,
+        scale: 1.1,
+        ease: 'power1.out'
+      });
+    });
+    skillItems[i].addEventListener('mouseleave', function() {
+      gsap.to(skillItems, {
+        duration: 0,
+        scale: 1,
+        ease: 'power1.out'
+      });
+    });
+  }
   subtitulos[i].addEventListener('mouseenter', function() {
-    gsap.to(this, {duration: 0.5, scale: 1.1});
+    gsap.to(this, {duration: 0.5, scale: 1.1, textShadow: "0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206,89,55,0)"});
   });
   subtitulos[i].addEventListener('mouseleave', function() {
-    gsap.to(this, {duration: 0.5, scale: 1});
+    gsap.to(this, {duration: 0.5, scale: 1, textShadow: "none"});
   });
+    
 }
 
-
-
-
-
-let menuAbierto = null;
-
-document.addEventListener('click', function(event) {
-  if (menuAbierto && !event.target.closest('.subtitulo2')) {
-    gsap.to(menuAbierto, {duration: 0.5, opacity: 0, onComplete: function() {
-      menuAbierto.style.display = 'none';
-      menuAbierto = null;
-    }});
-  }
-});
 
 
 
