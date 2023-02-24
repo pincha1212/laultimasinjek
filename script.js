@@ -75,7 +75,7 @@ opacity: 0,
 y: -25,
 ease: "bounce",
 stagger: 0.5,
-delay: 2
+
 });
 });
 
@@ -204,41 +204,40 @@ showSquare(currentIndex);
 
 
 
-// Botón de apertura para HTML
-const openBtnHTML = document.querySelector('.btn-html');
-// Botón de cierre para HTML
-const closeBtnHTML = document.querySelector('.close-html');
-// Cuadrado HTML
-const squareHTML = document.querySelector('.cuadrado4-html');
+// // Botón de apertura para HTML
+// const openBtnHTML = document.querySelector('.btn-html');
+// // Botón de cierre para HTML
+// const closeBtnHTML = document.querySelector('.close-html');
+// // Cuadrado HTML
+// const squareHTML = document.querySelector('.cuadrado4-html');
 
-const closeBtn2 = document.querySelector('#closeBtn2');
+// const closeBtn2 = document.querySelector('#closeBtn2');
 
-openBtnHTML.addEventListener("click", function() {
-previousButton.style.display = 'none';
-nextButton.style.display = 'none';
-squareHTML.style.display = "block";
-closeBtnHTML.style.display = "block";
-closeBtn2.style.display = "none";
-});
+// openBtnHTML.addEventListener("click", function() {
+// previousButton.style.display = 'none';
+// nextButton.style.display = 'none';
+// squareHTML.style.display = "block";
+// closeBtnHTML.style.display = "block";
+// closeBtn2.style.display = "none";
+// });
 
-closeBtnHTML.addEventListener("click", function() {
-  squareHTML.style.display = "none";
-  closeBtnHTML.style.display = "none";
-  previousButton.style.display = 'block';
-  closeBtn2.style.display = "block";
-  nextButton.style.display = 'block';
+// closeBtnHTML.addEventListener("click", function() {
+//   squareHTML.style.display = "none";
+//   closeBtnHTML.style.display = "none";
+//   previousButton.style.display = 'block';
+//   closeBtn2.style.display = "block";
+//   nextButton.style.display = 'block';
 
-});
+// });
 
 
-// Seleccionar los elementos con las clases correspondientes
 const title1 = document.querySelector('.title1');
 const subtitle1 = document.querySelector('.subtitle1');
 const code1 = document.querySelector('.code');
 const iframe1 = document.querySelector('.iframe1');
 const description1 = document.querySelector('.description1');
 
-// Crear la animación con GSAP
+
 gsap.to(title1, { duration: 1, y: -50, opacity: 1 });
 gsap.to(subtitle1, { duration: 1, y: 50, opacity: 1 });
 gsap.to(code1, { duration: 1, x: -50, opacity: 1 });
@@ -248,51 +247,51 @@ gsap.to(description1, { duration: 1, y: -50, opacity: 1 });
 
 
 
-// Botón de apertura para CSS
-const openBtnCSS = document.querySelector('.btn-css');
-// Botón de cierre para CSS
-const closeBtnCSS = document.querySelector('.close-css');
-// Cuadrado CSS
-const squareCSS = document.querySelector('.cuadrado4-css');
+// // Botón de apertura para CSS
+// const openBtnCSS = document.querySelector('.btn-css');
+// // Botón de cierre para CSS
+// const closeBtnCSS = document.querySelector('.close-css');
+// // Cuadrado CSS
+// const squareCSS = document.querySelector('.cuadrado4-css');
 
-openBtnCSS.addEventListener("click", function() {
-previousButton.style.display = 'none';
-nextButton.style.display = 'none';
-squareCSS.style.display = "block";
-closeBtnCSS.style.display = "block";focus
-closeBtn2.style.display = "none";
-});
+// openBtnCSS.addEventListener("click", function() {
+// previousButton.style.display = 'none';
+// nextButton.style.display = 'none';
+// squareCSS.style.display = "block";
+// closeBtnCSS.style.display = "block";focus
+// closeBtn2.style.display = "none";
+// });
 
-closeBtnCSS.addEventListener("click", function() {
-  squareCSS.style.display = "none";
-  closeBtnCSS.style.display = "none";
-  previousButton.style.display = 'block';
-  nextButton.style.display = 'block';
-  closeBtn2.style.display = "block";
-});
+// closeBtnCSS.addEventListener("click", function() {
+//   squareCSS.style.display = "none";
+//   closeBtnCSS.style.display = "none";
+//   previousButton.style.display = 'block';
+//   nextButton.style.display = 'block';
+//   closeBtn2.style.display = "block";
+// });
 
-// Botón de apertura para JavaScript
-const openBtnJS = document.querySelector('.btn-javascript');
-// Botón de cierre para JavaScript
-const closeBtnJS = document.querySelector('.close-javascript');
-// Cuadrado JavaScript
-const squareJS = document.querySelector('.cuadrado4-javascript');
+// // Botón de apertura para JavaScript
+// const openBtnJS = document.querySelector('.btn-javascript');
+// // Botón de cierre para JavaScript
+// const closeBtnJS = document.querySelector('.close-javascript');
+// // Cuadrado JavaScript
+// const squareJS = document.querySelector('.cuadrado4-javascript');
 
-openBtnJS.addEventListener("click", function() {
-squareJS.style.display = "block";
-closeBtnJS.style.display = "block";
-previousButton.style.display = 'none';
-nextButton.style.display = 'none';
-closeBtn2.style.display = "none";
-});
+// openBtnJS.addEventListener("click", function() {
+// squareJS.style.display = "block";
+// closeBtnJS.style.display = "block";
+// previousButton.style.display = 'none';
+// nextButton.style.display = 'none';
+// closeBtn2.style.display = "none";
+// });
 
-closeBtnJS.addEventListener("click", function() {
-  squareJS.style.display = "none";
-  closeBtnJS.style.display = "none";
-  previousButton.style.display = 'block';
-nextButton.style.display = 'block';
-closeBtn2.style.display = "block";
-});
+// closeBtnJS.addEventListener("click", function() {
+//   squareJS.style.display = "none";
+//   closeBtnJS.style.display = "none";
+//   previousButton.style.display = 'block';
+// nextButton.style.display = 'block';
+// closeBtn2.style.display = "block";
+// });
 
 
 
