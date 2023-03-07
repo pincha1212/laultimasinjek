@@ -335,49 +335,21 @@ button:focus {
 
   .arrow-right, 
   .arrow-left {
+    text-decoration: none;
+    outline: none;
     width: 50px;
-    height: 50px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
   }
   
-  .arrow-right-inner {
-    width: 0; 
-    height: 0; 
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid #bcbbbb6a;
-  }
-
-  .arrow-left-inner {
-    width: 0; 
-    height: 0; 
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right: 25px solid #bcbbbb6a;
-  }
-
-.arrow-left:hover .arrow-left-inner {
-  width: 0; 
-  height: 0; 
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-right: 25px solid white;
-}
-
-.arrow-right:hover .arrow-right-inner{
-  width: 0; 
-  height: 0; 
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 25px solid white;
-}
-
   .previous, .next{
+    text-decoration: none;
+    outline: none;
     z-index: 4;
-    bottom: 45%;
+    bottom: 5%;
     background-color: transparent;
     border: hidden;
   }
@@ -385,13 +357,13 @@ button:focus {
   .previous{
     font-weight: bold;
     position: absolute;
-    left: -70px;
+    left: -90px;
 
   }
 
   .next{
     position: absolute;
-    right: -70px;
+    right: -90px;
  
   }
 
