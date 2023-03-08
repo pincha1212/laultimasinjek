@@ -1,23 +1,22 @@
-// Obtenemos el elemento con id "loading"
+
 const loading = document.getElementById("loading");
 
-// Obtenemos todos los elementos con clase "loading-circle"
+
 const loadingCircles = document.querySelectorAll(".loading-circle");
 
-// Utilizamos la librería GSAP para añadir una animación a los elementos "loading-circle"
+
 gsap.from(loadingCircles, {
-  duration: 1, // Duración de la animación en segundos
-  opacity: 0, // Comenzamos con una opacidad de 0 (invisible)
-  scale: 0.5, // Reducimos el tamaño de los elementos a la mitad
-  ease: "bounce", // Utilizamos el easing "bounce" para la animación
-  stagger: 0.2, // Espacio entre cada animación en segundos
-  repeat: -1, // Repetimos la animación indefinidamente
-  yoyo: true // La animación yoyo, es decir, se anima hacia adelante y hacia atrás
+  duration: 1, 
+  opacity: 0, 
+  scale: 0.5, 
+  ease: "bounce", 
+  stagger: 0.2, 
+  repeat: -1, 
+  yoyo: true
 });
 
-// Establecemos un temporizador de 5000 milisegundos (5 segundos)
+
 setTimeout(function() {
-  // Utilizamos GSAP para animar el elemento "loading"
   gsap.to(loading, {
     duration: 0.5, 
     opacity: 0, 
