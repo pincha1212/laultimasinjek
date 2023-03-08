@@ -337,12 +337,18 @@ button:focus {
   .arrow-left {
     text-decoration: none;
     outline: none;
-    width: 50px;
+    width: 25px;
     height: 425px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+  }
+
+  .arrow-right:focus, 
+  .arrow-left:focus{
+    text-decoration: none;
+    outline: none;
   }
   
   .previous, .next{
@@ -357,15 +363,17 @@ button:focus {
   .previous{
     font-weight: bold;
     position: absolute;
-    left: -90px;
+    left: -70px;
 
   }
 
   .next{
     position: absolute;
-    right: -90px;
+    right: -70px;
  
   }
+
+
 
   #carousel-img .square-carousel .popup h3.subtitulo.cuadrado {
     margin-top: 40px;
@@ -598,7 +606,7 @@ button:focus {
 
 .btn-javascript {
   background-color: #F7DF1E;
-  color: black;
+  color: white;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
@@ -773,7 +781,7 @@ button:focus {
   display: block;
   background-color: #4CAF50;
   height: 100%;
-  width: 100%;
+  width: 94%;
 }
 
 .btn-trabajo-en-equipo{
