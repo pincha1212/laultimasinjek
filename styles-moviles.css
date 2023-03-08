@@ -1,87 +1,18 @@
 @media only screen and (max-width: 600px) {
-    #loading {
-      align-items: center;
-      justify-content:center;
-    }
-    .contenedor-loading {
-      align-items: center;
-    }
-    .load {
-      text-align: center;
-      left: 0%;
-      margin-right: 29%;
-    }
-
-
-    .loading-circle {
-      margin: 10px;
-    }
-    .nombre {
-      text-align: center;
-      transform: translate(-70px, -40px);
-    }
-
-    /* Agregar estilo CSS para los botones "toggle-btn"*/
-    .toggle-btn {
-      z-index: 0;
-      left: 10px;
-      top: 10px;
-      cursor: pointer;
-      display: inline-block;
-      height: 40px;
-      position: absolute;
-      width: 40px;
-    }
-    
-    .line {
-      position: fixed;
-      background-color: black;
-      border-radius: 4px;
-      display: block;
-      height: 4px;
-      margin: 6px 0;
-      width: 100%;
-    }
-    
-    .toggle-btn .line:first-child {
-      transform: translate(-12px, -32px) ;
-    }
-    
-    .toggle-btn .line:nth-child(2) {
-      transform: translate(-12px, -36px) ;
-    }
-    
-    .toggle-btn .line:last-child {
-      transform: translate(-12px , -40px);
-    }
-    
-    .toggle-btn:focus {
-      outline: none;
-    }
-    
-
-  
-      .boton1, .boton2, .boton3 {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-      
-      .boton1 {
-        margin-top: 10px;
-      }
-      
-      .boton2 {
-        margin-top: 60px;
-      }
-      
-      .boton3 {
-        margin-top: 110px;
-        width: 114px;
-        height: 44px;
-        font-size: 14px;
-      }
-      .boton {
-        display: none;
-      }
+  #loading{align-items:center;justify-content:center}
+  .contenedor-loading{align-items:center}
+  .load{text-align:center;left:0;margin-right:29%}
+  .loading-circle{margin:10px}
+  .nombre{text-align:center;transform:translate(-70px,-40px)}
+  .toggle-btn{z-index:0;left:10px;top:10px;cursor:pointer;display:inline-block;height:40px;position:absolute;width:40px}
+  .line{position:fixed;background-color:#000;border-radius:4px;display:block;height:4px;margin:6px 0;width:100%}
+  .toggle-btn .line:first-child{transform:translate(-12px,-32px)}
+  .toggle-btn .line:nth-child(2){transform:translate(-12px,-36px)}
+  .toggle-btn .line:last-child{transform:translate(-12px,-40px)}
+  .toggle-btn:focus{outline:none}
+  .boton1,.boton2,.boton3{position:absolute;left:0;top:0}
+  .boton1{margin-top:10px}
+  .boton2{margin-top:60px}
+  .boton3{margin-top:110px;width:114px;height:44px;font-size:14px}
+  .boton{display:none}
   }
