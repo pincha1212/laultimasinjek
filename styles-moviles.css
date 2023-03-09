@@ -4,7 +4,7 @@
   .load{text-align:center;left:0;margin-right:29%}
   .loading-circle{margin:10px}
   .backgroundM{background-image:url(./assets/planets-background-hd-1024x768-152440.jpg)!important}
-  .hm{position:absolute;left:15%}
+  .t1m{position:absolute;left:15%}
   .cd1{position:absolute;left:-10%;top:15%;width:100%}
   .nombre{text-align:center;transform:translate(-70px,-40px)}
   .toggle-btn{z-index:0;left:10px;top:10px;cursor:pointer;display:inline-block;height:40px;position:absolute;width:40px}
