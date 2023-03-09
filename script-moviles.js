@@ -1,12 +1,1 @@
-const toggleBtn = document.querySelector('.toggle-btn');
-const botones = document.querySelectorAll('.boton');
-let isOpen = false;
-
-toggleBtn.addEventListener('click', function() {
-  if (!isOpen) {
-    botones.forEach(boton => boton.style.display = 'block');
-  } else {
-    botones.forEach(boton => boton.style.display = 'none');
-  }
-  isOpen = !isOpen;
-});
+const toggleBtn=document.querySelector(".toggle-btn"),botones=document.querySelectorAll(".boton");let isOpen=!1;toggleBtn.addEventListener("click",function(){isOpen?botones.forEach(e=>e.style.display="none"):botones.forEach(e=>e.style.display="block"),isOpen=!isOpen});
