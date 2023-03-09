@@ -17,8 +17,8 @@
   .boton2{margin-top:60px}
   .boton3{margin-top:110px;width:114px;height:44px;font-size:14px}
   .boton{display:none}
-  .fondo1{overflow: scroll;}
-  .sim{ position:absolute;bottom: -75%;left: 3%}
+  .fondo1{overflow-y: scroll;}
+  .sim{ position:absolute;bottom: -75%;left: 0%}
   .social-icon{display: flex;}
   .music-container{
     position: absolute;
@@ -47,7 +47,7 @@
     text-align: center;
     display: flex;
     position: absolute;
-    left: 4%;
+    left: 2%;
     bottom: -25%;
     width: 100%;
   }
