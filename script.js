@@ -318,22 +318,4 @@ nombre.addEventListener('mouseleave', () => {
 animation.play();
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.cookie = "mi_cookie=123; SameSite=None; Secure";
