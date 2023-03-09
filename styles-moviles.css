@@ -26,4 +26,20 @@
   .cclm{position:absolute;top:580px;right:-60px}
   .cloclm{position:absolute;right:-72px;top:158px}
   .foom{text-align:center;display:flex;position:absolute;left:2%;bottom:-25%;width:100%}
+
+  .fondo2 {
+    max-width: 360px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .t2m{
+    position: absolute;
+    left: 10%;
+  }
+  .cpm,.cnm{
+    bottom: 10%;
+    position:absolute;
+  }
+  .cpm{left:50px}
+  .cnm{right:50px}
   }

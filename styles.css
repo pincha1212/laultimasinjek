@@ -41,7 +41,7 @@ button:hover{border-radius:10px}
 .arrow-right,.arrow-left{text-decoration:none;outline:none;width:25px;height:425px;display:flex;justify-content:center;align-items:center;background-color:transparent}
 .arrow-right:focus,.arrow-left:focus{text-decoration:none;outline:none}
 .previous,.next{text-decoration:none;outline:none;z-index:4;bottom:6%;background-color:transparent;border:hidden}
-.previous{font-weight:700;position:absolute;left:-70px}
+.previous{position:absolute;left:-70px}
 .next{position:absolute;right:-70px}
 #carousel-img .square-carousel .popup h3.subtitulo.cuadrado{margin-top:40px}
 .datosP2{padding-left:80px}
