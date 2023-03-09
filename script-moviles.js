@@ -10,16 +10,3 @@ toggleBtn.addEventListener('click', function() {
   }
   isOpen = !isOpen;
 });
-
-
-
-
-
-fetch('version.txt')
-  .then(response => response.text())
-  .then(version => {
-    document.getElementById('version').textContent = version;
-  })
-  .catch(error => {
-    console.error('Error al obtener la versión: ' + error);
-  });

@@ -3,6 +3,8 @@
   .contenedor-loading{align-items:center}
   .load{text-align:center;left:0;margin-right:29%}
   .loading-circle{margin:10px}
+  .hm{position:absolute; left: 15%;}
+  .cd1{position:absolute; left: -10%;top: 15%;width: 100%;}
   .nombre{text-align:center;transform:translate(-70px,-40px)}
   .toggle-btn{z-index:0;left:10px;top:10px;cursor:pointer;display:inline-block;height:40px;position:absolute;width:40px}
   .line{position:fixed;background-color:#000;border-radius:4px;display:block;height:4px;margin:6px 0;width:100%}
@@ -16,7 +18,7 @@
   .boton3{margin-top:110px;width:114px;height:44px;font-size:14px}
   .boton{display:none}
   .fondo1{overflow: scroll;}
-  .sim{ position:absolute;bottom: -450px;left:10%}
+  .sim{ position:absolute;bottom: -75%;left: 3%}
   .social-icon{display: flex;}
   .music-container{
     position: absolute;
@@ -25,8 +27,8 @@
   }
   .clm{
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 12%;
+    right: 20%;
   }
   .cclm{
     position: absolute;
@@ -45,8 +47,8 @@
     text-align: center;
     display: flex;
     position: absolute;
-    left: 15%;
-    bottom: -15%;
+    left: 4%;
+    bottom: -25%;
     width: 100%;
   }
 
