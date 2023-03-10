@@ -1,34 +1,186 @@
 @media only screen and (max-width: 600px) {
-  #loading{align-items:center;justify-content:center}
-  .contenedor-loading{align-items:center}
-  .load{text-align:center;left:0;margin-right:29%}
-  .loading-circle{margin:10px}
-  .backgroundM{background-image:url(./assets/planets-background-hd-1024x768-152440.jpg)!important}
-  .t1m{position:absolute;left:15%}
-  .cd1{position:absolute;left:-10%;top:15%;width:100%}
-  .nombre{text-align:center;transform:translate(-70px,-40px)}
-  .toggle-btn{z-index:0;left:10px;top:10px;cursor:pointer;display:inline-block;height:40px;position:absolute;width:40px}
-  .line{position:fixed;border-radius:4px;display:block;height:4px;margin:6px 0;width:100%}
-  .toggle-btn .line:first-child{transform:translate(-12px,-32px)}
-  .toggle-btn .line:nth-child(2){transform:translate(-12px,-36px)}
-  .toggle-btn .line:last-child{transform:translate(-12px,-40px)}
-  .toggle-btn:focus{outline:none}
-  .boton1,.boton2,.boton3{position:absolute;left:10%;top:0}
-  .boton1{margin-top:10px}
-  .boton2{margin-top:60px}
-  .boton3{margin-top:110px;width:114px;height:44px;font-size:14px}
-  .boton{display:none}
-  .fondo1{overflow-y:scroll;overflow-x:hidden}
-  .sim{position:absolute;bottom:-75%;left:0}
-  .social-icon{display:flex}
-  .music-container{position:absolute;right:-50px;top:100px}
-  .clm{position:absolute;top:5%;right:20%}
-  .cclm{position:absolute;top:580px;right:-60px}
-  .cloclm{position:absolute;right:-72px;top:158px}
-  .foom{text-align:center;display:flex;position:absolute;left:2%;bottom:-25%;width:100%}
-  .fondo2{max-width:360px;overflow-y:scroll;overflow-x:hidden}
-  .t2m{position:absolute;left:10%}
-  .cpm,.cnm{bottom:10%;position:absolute}
-  .cpm{left:50px}
-  .cnm{right:50px}
+  #loading {
+      align-items: center;
+      justify-content: center
   }
+
+  .contenedor-loading {
+      align-items: center
+  }
+
+  .load {
+      text-align: center;
+      left: 0;
+      margin-right: 29%
+  }
+
+  .loading-circle {
+      margin: 10px
+  }
+
+  .backgroundM {
+      background-image: url(./assets/planets-background-hd-1024x768-152440.jpg) !important
+  }
+
+  .t1m {
+      position: absolute;
+      left: 15%
+  }
+
+  .cd1 {
+      position: absolute;
+      left: -10%;
+      top: 15%;
+      width: 100%
+  }
+
+  .nombre {
+      text-align: center;
+      transform: translate(-70px, -40px)
+  }
+
+  .toggle-btn {
+      z-index: 0;
+      left: 10px;
+      top: 10px;
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      position: absolute;
+      width: 40px
+  }
+
+  .line {
+      position: fixed;
+      border-radius: 4px;
+      display: block;
+      height: 4px;
+      margin: 6px 0;
+      width: 100%
+  }
+
+  .toggle-btn .line:first-child {
+      transform: translate(-12px, -32px)
+  }
+
+  .toggle-btn .line:nth-child(2) {
+      transform: translate(-12px, -36px)
+  }
+
+  .toggle-btn .line:last-child {
+      transform: translate(-12px, -40px)
+  }
+
+  .toggle-btn:focus {
+      outline: none
+  }
+
+  .boton1,
+  .boton2,
+  .boton3 {
+      position: absolute;
+      left: 10%;
+      top: 0
+  }
+
+  .boton1 {
+      margin-top: 10px
+  }
+
+  .boton2 {
+      margin-top: 60px
+  }
+
+  .boton3 {
+      margin-top: 110px;
+      width: 114px;
+      height: 44px;
+      font-size: 14px
+  }
+
+  .boton {
+      display: none
+  }
+
+  .fondo1 {
+      overflow-y: scroll;
+      overflow-x: hidden
+  }
+
+  .sim {
+      position: absolute;
+      bottom: -75%;
+      left: 0
+  }
+
+  .social-icon {
+      display: flex
+  }
+
+  .music-container {
+      position: absolute;
+      right: -50px;
+      top: 100px
+  }
+
+  .clm {
+      position: absolute;
+      top: 5%;
+      right: 20%
+  }
+
+  .cclm {
+      position: absolute;
+      top: 580px;
+      right: -60px
+  }
+
+  .cloclm {
+      position: absolute;
+      right: -72px;
+      top: 158px
+  }
+
+  .foom {
+      text-align: center;
+      display: flex;
+      position: absolute;
+      left: 2%;
+      bottom: -25%;
+      width: 100%
+  }
+
+  .fondo2 {
+      max-width: 360px;
+      overflow-y: scroll;
+      overflow-x: hidden
+  }
+
+  .t2m {
+      position: absolute;
+      left: 10%
+  }
+
+  .cpm,
+  .cnm {
+      bottom: 10%;
+      position: absolute
+  }
+
+  .cpm {
+      left: 50px
+  }
+
+  .cnm {
+      right: 50px
+  }
+
+  .fondo3 {
+      max-width: 360px;
+      overflow-y: scroll;
+      overflow-x: hidden
+  }
+  #closeBtn3 {
+    transform: translateX(-2px) !important;
+}
+}
