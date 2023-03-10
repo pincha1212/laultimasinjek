@@ -41,6 +41,7 @@
 }
 
 button {
+    user-select: none;
     background-color: transparent;
     color: #fff;
     border: none;
@@ -98,6 +99,7 @@ button:hover {
 #closeBtn,
 #closeBtn2,
 #closeBtn3 {
+    user-select: none;
     display: none;
     color: #bcbbbb6a
 }
@@ -131,6 +133,7 @@ button:hover {
 }
 
 .nombre {
+    user-select: none;
     position: absolute;
     top: 50%;
     left: 35%;
@@ -164,6 +167,7 @@ button:hover {
 }
 
 .titulo1 {
+    user-select: none;
     position: absolute;
     top: 10px;
     left: 35%;
@@ -175,6 +179,7 @@ button:hover {
 }
 
 .subtitulo1 {
+    user-select: none;
     margin-top: 10px;
     color: #fff;
     font-weight: 700;
@@ -189,6 +194,7 @@ button:hover {
 }
 
 .social-icon {
+    user-select: none;
     margin: 5px;
     position: absolute;
     top: 0;
@@ -242,6 +248,7 @@ button:hover {
 }
 
 .footer1 {
+    user-select: none;
     color: #fff;
     position: absolute;
     bottom: 5%;
@@ -266,6 +273,7 @@ button:hover {
 }
 
 .titulo2 {
+    user-select: none;
     position: absolute;
     top: 10px;
     left: 39%;
@@ -277,6 +285,7 @@ button:hover {
 }
 
 .subtitulo2 {
+    user-select: none;
     text-align: center;
     color: #fff;
     cursor: pointer;
@@ -285,6 +294,7 @@ button:hover {
 }
 
 .menu-desplegable2 {
+    user-select: none;
     display: none
 }
 
@@ -865,12 +875,14 @@ button:hover {
     overflow-y: scroll
 }
 .cpt{
+    user-select: none;
     transform: translate(0px, 10px);
     font-weight: bold;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CE5937, 0 0 30px #CE5937, 0 0 40px #CE5937, 0 0 55px #CE5937, 0 0 75px #CE5937, 2px 2px 2px rgba(206, 89, 55, 0);
     color: #FFF
 }
 .cdp{
+    user-select: none;
     color: white;
 }
 .card-body{
@@ -918,4 +930,28 @@ button:hover {
         font-size: 14px;
         transform: translate(650px, -100px)
     }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 5px;
+  }
+  
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #120e33;
+  outline: 1px solid grey;
+  filter: drop-shadow(0 0 5px rgba(206, 89, 55, 0.5));
 }
