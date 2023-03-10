@@ -951,7 +951,7 @@ button:hover {
   
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #120e33;
+  background-color: rgb(81, 76, 76);
   outline: 1px solid grey;
   filter: drop-shadow(0 0 5px rgba(206, 89, 55, 0.5));
 }
