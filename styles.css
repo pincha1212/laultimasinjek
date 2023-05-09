@@ -33,7 +33,7 @@
 .background {
     background-size: contain;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     background-image: url(./assets/23626-Age-Of-Empires-IV-4k-Ultra-HD-Wallpaper.png);
     z-index: -1;
     width: 100%;
@@ -87,7 +87,7 @@ button:hover {
 .boton1,
 .boton2,
 .boton3 {
-    position: absolute
+    position: absolute;
 }
 
 .boton1:hover,
